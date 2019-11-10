@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { SimpleTransitionComponent } from './simple-transition/simple-transition.component';
 import { HomeComponent } from './home/home.component';
+import { SlidingPanelComponent } from './sliding-panel/sliding-panel.component';
 
 const routes: Routes = [
   {
@@ -17,11 +18,21 @@ const routes: Routes = [
     path: 'simple_transition',
     component: SimpleTransitionComponent,
     pathMatch: 'full'
+  },
+  {
+    path: 'sliding_panel',
+    component: SlidingPanelComponent,
+    pathMatch: 'full'
   }
 ];
 
 @NgModule({
-  declarations: [AppComponent, SimpleTransitionComponent, HomeComponent],
+  declarations: [
+    AppComponent,
+    SimpleTransitionComponent,
+    HomeComponent,
+    SlidingPanelComponent
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

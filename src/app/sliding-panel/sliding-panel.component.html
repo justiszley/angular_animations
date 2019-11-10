@@ -1,0 +1,22 @@
+<button class="toggle" (click)="toggle()">TOGGLE</button>
+
+<div class="container">
+  <div class="content flex-item"></div>
+  <div
+    [@sidebarTransition]="isShown ? 'open' : 'closed'"
+    class="panel flex-item"
+  >
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu
+      hendrerit purus. Curabitur consequat ultricies ipsum sed porttitor.
+      Quisque ac metus lorem. Phasellus a vulputate ligula. Morbi finibus
+      sollicitudin nisi, vitae cursus sem malesuada aliquam. Curabitur ac rutrum
+      metus, sit amet ornare massa. Pellentesque ut mauris non ligula ornare
+      euismod et ut purus. Duis in enim auctor, fermentum nibh nec, ultrices
+      turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+      posuere cubilia Curae; Nam laoreet eleifend rhoncus. Ut malesuada ex
+      lorem, ut finibus massa dignissim ut. Nulla facilisi. Quisque nunc leo,
+      pretium vel turpis et, luctus posuere dui.
+    </p>
+  </div>
+</div>
